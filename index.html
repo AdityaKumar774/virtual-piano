@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<title> Virtual Piano | Song Playing Application </title>
+				<link rel="stylesheet" href="font-awesome.css">
+				<link rel="stylesheet" href="style.css">
+				<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+		</head>
+		<body>
+			<!-- Welcome Screen Starts -->
+				<div class="welcome">Virtual Piano, a song playing application! <br> <br> <br>
+					<input type="text" placeholder="Enter your name" id="input-name">
+					<button type="button" id="submitbtn"> Go </button>
+				</div>
+			<!-- Welcome Screen Ends -->
+			
+				<div class="hidden" id="main">
+					<p class="user-name"> Welcome </p>
+						
+					<!-- main body content starts -->
+													<table id="songs">
+																<thead>
+																	<tr>
+																		<td>Title</td>
+																		<td>Artist</td>
+																		<td>Album</td>
+																		<td>Duration</td>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr id='song1'>
+																		<td class="song-name"></td>
+																		<td class="song-artist"></td>
+																		<td class="song-album"></td>
+																		<td class="song-length"></td>
+																	</tr>
+																	<tr id='song2'>
+																		<td class="song-name"></td>
+																		<td class="song-artist"></td>
+																		<td class="song-album"></td>
+																		<td class="song-length"></td>
+																	</tr>
+																	<tr id='song3'>
+																		<td class="song-name"></td>
+																		<td class="song-artist"></td>
+																		<td class="song-album"></td>
+																		<td class="song-length"></td>
+																	</tr>
+																	<tr id='song4'>
+																		<td class="song-name"></td>
+																		<td class="song-artist"></td>
+																		<td class="song-album"></td>
+																		<td class="song-length"></td>
+																	</tr>
+																</tbody>
+														</table>
+					<!-- main body ends -->
+					
+					<!-- clipart part starts -->
+					<section>
+									<div class="current-song-wrapper">
+													<img class="current-song-image">
+													<div>
+																	<p class="current-song-name"></p>
+																	<p class="current-song-album"></p>
+													</div>
+									</div>
+									<audio class="audio-song"></audio>
+					</section>
+					<!-- clipart part ends -->
+					
+					<!-- controls part starts -->
+				<div class="player-buttons">
+					<button type="button">
+      <i class="fa fa-random clickable disabled" aria-hidden="true"></i> &nbsp;
+						</button>
+					<button type="button">
+      <i class="fa fa-step-backward clickable" aria-hidden="true"></i> &nbsp;
+					</button>
+					<button type="button" id="play-button">
+      <i class="fa fa-play clickable play-icon" aria-hidden="true"></i> &nbsp;
+					</button>
+					<button type="button">
+      <i class="fa fa-step-forward clickable" aria-hidden="true"></i> &nbsp;
+					</button>
+					<button type="button">
+      <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
+					</button>	
+						
+    </div>
+					<p class="current-time"></p>    <!-- for showing the current time, changes every second -->
+  			<!-- controls part ends -->
+				</div>
+
+			<script src="jquery-3.2.1.js"></script> <!-- jquery file -->
+			<script src="main.js"></script>	<!-- custom js file -->
+			<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script> <!-- script for serach box -->
+			<script src="audiosynth.js"></script> <!-- audio synthesizer -->
+		</body>
+</html>

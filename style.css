@@ -1,0 +1,85 @@
+body{
+	background-color: #333;
+}
+
+p{
+	color: #FFF;
+	text-transform: capitalize;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.error{
+	border: 2px solid red; 
+}
+
+.welcome{
+	text-align: center;
+	padding-top: 150px;
+	font-size: 30px;
+	font-weight: 800;
+	color: #FFF;
+}
+
+input{
+	font-size: 20px;
+	font-weight: 800;
+	text-transform: capitalize;
+}
+
+button{
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.hidden{
+	display: none;
+}
+
+#main{
+	width:  800px;
+	margin: 2rem auto;
+	padding-top: 10px;
+}
+
+#songs{
+	width: 800px;
+	border-bottom: 2px solid #FFF;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.current-song-wrapper div {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5px;
+}
+
+.current-song-name {
+	font-size: 22px;
+	margin: 0;
+}
+
+.current-song-album {
+	margin: 5px 0;
+}
+
+audio {
+	width: 340px;
+}
+
+section {
+	padding: 2%;
+}
+
+.player-buttons{
+	text-align: center;
+}
+
+.player-buttons .fa {
+    margin-right: 2rem;
+}
+
+.fa.disabled {
+    color: gray;
+}
